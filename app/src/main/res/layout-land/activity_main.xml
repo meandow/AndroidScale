@@ -1,0 +1,122 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:color="#000000">
+    <LinearLayout
+        android:layout_width="450dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+     <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lcd4" />
+        <TextView
+            android:id="@+id/sensorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="120dp"
+            android:paddingStart="25dp"
+            android:layout_marginTop="15dp"
+            android:paddingEnd="10dp"
+            android:layout_alignTop="@id/myImageView"
+            android:textColor="#FFFAFA"
+            android:text="00000" />
+         <TextView
+             android:id="@+id/totalView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textSize="118dp"
+             android:paddingStart="25dp"
+             android:paddingEnd="10dp"
+             android:layout_marginBottom="15dp"
+             android:layout_alignBottom="@id/myImageView"
+             android:textColor="#FFFAFA"
+             android:text="00000"/>
+         <ImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_marginTop="20dp"
+             android:layout_alignParentEnd="true"
+             android:layout_marginEnd="65dp"
+             android:src="@drawable/skopa"/>
+         <ImageView
+             android:layout_width="75dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentEnd="true"
+             android:layout_marginEnd="50dp"
+             android:layout_marginTop="100dp"
+             android:layout_marginStart="-10dp"
+             android:src="@drawable/flak"/>
+
+
+
+        </RelativeLayout>
+
+        <!--      <TextView
+               android:id="@+id/sensorView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:background="@drawable/lcd3"
+               android:textSize="120dp"
+               android:textColor="#33b5e5"
+               android:text="0000" />
+           <TextView
+               android:id="@+id/totalView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:background="@drawable/lcd3"
+               android:textSize="120dp"
+               android:textColor="#33b5e5"
+               android:text="0000" />-->
+
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="145dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Nollställ"
+        android:id="@+id/button"
+         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Lägg till"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="Skicka"
+        android:layout_height="70dp"
+        android:id="@+id/button3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Reset"
+        android:id="@+id/button4" />
+    </LinearLayout>
+    </LinearLayout>
